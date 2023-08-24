@@ -1,0 +1,30 @@
+/* header info */
+.headerinfo a h1 {
+    text-shadow: 2px 2px #bf75ce8f;
+}
+
+.leftsideinfo {
+    height: 100%;
+}
+
+.leftsideinfo ul li a {
+    background-color: #ddd;
+    color: black;
+    margin: 8px;
+
+}
+
+.leftsideinfo ul li a:hover {
+    background-color: #3e8e41;
+    color: white;
+    border: 2px solid goldenrod;
+    border: 20px;
+}
+
+.leftbar {
+    height: 100%;
+}
+
+.underline {
+    text-decoration: none;
+}
