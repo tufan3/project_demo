@@ -1,12 +1,12 @@
 <?php
 require_once '../database/connect.php';
 
-$sql = "SELECT * FROM users"; // Replace 'your_table' with your actual table name
+$sql = "SELECT * FROM users";
 $results = mysqli_query($conn, $sql);
 
 
 while ($row = mysqli_fetch_assoc($results)) {
-    // foreach ($results as $result) {
+
     ?>
 
     <tr>

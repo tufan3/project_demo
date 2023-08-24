@@ -9,9 +9,6 @@
 
 <body class="">
   <?Php
-  // if (isset($_GET['page'])) {
-
-  // }
   $pagename = $_GET['page'];
 
   if ($pagename != '') {

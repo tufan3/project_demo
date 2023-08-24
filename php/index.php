@@ -25,12 +25,7 @@
         <div class="col-9 bg-body-tertiary">
             <?php
             include "body.php";
-            // include "home.php";
-            // include "about.php";
-            // include "about.php";
-            // include "contact.php";
-            // include "login.php";
-            // include "register.php";
+
             ?>
         </div>
     </div>

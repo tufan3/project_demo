@@ -12,7 +12,7 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary m-2">
     <div class="container">
       <a class="navbar-brand m-0" href="index.php?page=home">
-        <h1>LeoTech</h1>
+        <h1>Tufan</h1>
       </a>
 
       <div>

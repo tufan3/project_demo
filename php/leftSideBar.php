@@ -28,12 +28,6 @@
       <li class="nav-item">
         <a class="nav-link" href="index.php?page=register">Register</a>
       </li>
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="index.php?page=dashboard">Dashboard</a>
-      </li> -->
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="#">Logout</a>
-      </li> -->
     </ul>
   </div>
 </body>
