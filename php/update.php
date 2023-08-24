@@ -1,13 +1,6 @@
 <?php
-require_once '../database/connect.php';
-
-if (isset($_GET['update_id'])) {
-    $update_id = $_GET['update_id'];
-
-    $sql = "SELECT * FROM `todolist`.`users` WHERE user_id = '$update_id'";
-    $results = mysqli_query($conn, $sql);
-    $row = mysqli_fetch_assoc($results);
-}
+include '../database/connect.php';
+$user_id = $_GET['user_id'];
 
 if (isset($_POST['submit'])) {
 
@@ -15,12 +8,13 @@ if (isset($_POST['submit'])) {
     $user_name = $_POST['user_name'];
     $user_email = $_POST['user_email'];
 
-    $sql = "UPDATE `users` SET 'user_name'='$user_name', 'user_email'='$user_email' WHERE user_id = '$update_id'";
+    $sql = "UPDATE `users` SET user_name='$user_name', user_email='$user_email' WHERE user_id = '$user_id'";
     $results = mysqli_query($conn, $sql);
     if ($results) {
         echo "<script>
-                            window.location.href='index.php?page=dashboard';
-                            </script>";
+        window.location.href='index.php?page=dashboard';
+        </script>";
+        // header("location:index.php?page=dashboard.php");
     }
 }
 ?>
@@ -38,6 +32,11 @@ if (isset($_POST['submit'])) {
 <body>
     <div class="mx-auto w-50 border border-info-subtle rounded-2 shadow p-5 m-5">
         <form action="" method="post">
+            <?php
+            $sql = "SELECT * FROM `todolist`.`users` WHERE user_id = '$user_id'";
+            $results = mysqli_query($conn, $sql);
+            $row = mysqli_fetch_assoc($results);
+            ?>
 
             <!-- design part -->
             <h1 class="text-center mb-4 text-success">Update</h1>
