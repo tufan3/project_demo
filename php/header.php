@@ -22,7 +22,7 @@
               <i class="fa-solid fa-right-from-bracket text-info p-1 fs-3"></i>
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item text-center" href="index.php?page=logout"><i
+              <li><a class="dropdown-item text-center" href="index.php?page=login"><i
                     class="fa-solid fa-right-from-bracket ms-1"></i>Logout</a></li>
 
             </ul>

@@ -1,5 +1,4 @@
 <?php
-// ob_start();
 require_once '../database/connect.php';
 if (isset($_POST['submit'])) {
     $user_name = $_POST['user_name'];
@@ -37,11 +36,9 @@ if (isset($_POST['submit'])) {
         $sql = "INSERT INTO users (user_name, user_email, user_password) VALUES ('$user_name', '$user_email', '$user_password')";
         $results = mysqli_query($conn, $sql);
         if ($results) {
-            // header("location:index.php?page=login");
             echo "<script>
             window.location.href='index.php?page=login';
             </script>";
-            // ob_end_flush();
         }
     } else {
         foreach ($errors as $error) {
